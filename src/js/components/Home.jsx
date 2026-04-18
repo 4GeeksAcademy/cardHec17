@@ -1,47 +1,32 @@
 import React from "react";
 
-//include images into your bundle
+// Importación correcta de la imagen
 import rigoImage from "../../img/rigo-baby.jpg";
+import { card } from "./Card";
 
-
-import { useState, useEffect } from 'react';
-function Temporizador() {
-const [segundos, setSegundos] = useState(0);
-
-useEffect(() => {
-const intervalo = setInterval(() => {
-	setSegundos(prev => prev + 1);
-    }, 1000);
-
-
-    return () => clearInterval(intervalo);
-  }, []);
-
-  return <h1>Segundos: {segundos}</h1>;
-}
-
-
-//create your first component
 const Home = () => {
-	return (
-		<div className="text-center">
-            
+  const name = 'pepito margarita';
+  const myfunction = () => {
+    return 'hola soy una func' 
+  }
 
-function InnerHtm () {
-        <div className = 'container'>
-			<div className = 'float'>
-                <span className = 'tama bg-warning text-dark'>Reloj</span>
-                <span>1</span>
-                <span>1</span>
-                <span>1</span>
-                <span>1</span>
-                <span>1</span>
-                <span>1</span>
-			</div>
-        </div>
-}
-		</div>
-	);
+  return (
+    <div className="text-center">
+      <h1 className="text-center mt-5">Hello Rigo!</h1>
+      <p>{myfunction()}</p>
+      <p>
+        {/* Usamos el nombre de la variable que importamos arriba */}
+        <img src={rigoImage} alt="Rigo Baby" />
+      </p>
+      <a href="#" className="btn btn-success">
+        if you see this green button... bootstrap is working... {name}
+      </a>
+      <p>
+        Made by{" "}
+        <a href="http://www.4geeksacademy.com">4Geeks Academy</a>, with love!
+      </p>
+    </div>
+  );
 };
 
 export default Home;
