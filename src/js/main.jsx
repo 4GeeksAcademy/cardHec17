@@ -8,12 +8,39 @@ import "bootstrap"
 // index.css'
 import '../styles/index.css'
 
-// components
 import Home from './components/Home';
+import Card from './components/Card';
+import NavG from './components/NavG';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <Home/>
-    <Card/>
+
+  <div className = 'container'>
+        <div>
+          <NavG/> 
+        </div>
+        <div style={{marginTop: '100px'}}></div>
+        <div justify-content-center align-items-center>
+          <Home/> 
+        </div> 
+        
+  <div className = 'Container mt-4'>
+        <div className='row justify-content-center'>
+          <div className = 'col-12 col-md-3 d-flex mb-4 justify-content-center'div>
+            <Card/>
+          </div>
+          <div className = 'col-12 col-md-3 d-flex mb-4 justify-content-center'div>
+            <Card/>
+          </div>
+            <div className = 'col-12 col-md-3 d-flex mb-4 justify-content-center'div>
+            <Card/>
+          </div>
+            <div className = 'col-12 col-md-3 d-flex mb-4 justify-content-center'div>
+            <Card/>
+          </div>
+        </div>  
+  </div>
+
+  </div>
   </React.StrictMode>,
 )
