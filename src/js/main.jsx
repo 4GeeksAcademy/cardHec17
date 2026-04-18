@@ -11,6 +11,7 @@ import '../styles/index.css'
 import Home from './components/Home';
 import Card from './components/Card';
 import NavG from './components/NavG';
+import {Footer} from './components/Footer';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
@@ -24,23 +25,25 @@ ReactDOM.createRoot(document.getElementById('root')).render(
           <Home/> 
         </div> 
         
-  <div className = 'Container mt-4'>
-        <div className='row justify-content-center'>
-          <div className = 'col-12 col-md-3 d-flex mb-4 justify-content-center'div>
-            <Card/>
-          </div>
-          <div className = 'col-12 col-md-3 d-flex mb-4 justify-content-center'div>
-            <Card/>
-          </div>
-            <div className = 'col-12 col-md-3 d-flex mb-4 justify-content-center'div>
-            <Card/>
-          </div>
-            <div className = 'col-12 col-md-3 d-flex mb-4 justify-content-center'div>
-            <Card/>
-          </div>
-        </div>  
-  </div>
-
+        <div className = 'Container mt-4'>
+              <div className='row justify-content-center'>
+                <div className = 'col-12 col-md-3 d-flex mb-4 justify-content-center'div>
+                  <Card/>
+                </div>
+                <div className = 'col-12 col-md-3 d-flex mb-4 justify-content-center'div>
+                  <Card/>
+                </div>
+                  <div className = 'col-12 col-md-3 d-flex mb-4 justify-content-center'div>
+                  <Card/>
+                </div>
+                  <div className = 'col-12 col-md-3 d-flex mb-4 justify-content-center'div>
+                  <Card/>
+                </div>
+              </div>  
+        </div>
+        <div>
+          <Footer/>
+        </div>
   </div>
   </React.StrictMode>,
 )
